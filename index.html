@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naqiya Bharmal | Personal Diary Portfolio</title>
+    <!-- Google Fonts for diary typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Desk Background Decor -->
+    <div class="desk-decor coffee-mug">☕</div>
+    <div class="desk-decor paperclip-1">📎</div>
+    <div class="desk-decor paperclip-2">📎</div>
+    <div class="desk-decor leaf-1">🍃</div>
+    <div class="desk-decor leaf-2">🌿</div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-logo">
+            <span class="handwritten">Naqiya's Journal</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#hero" class="nav-item active" id="nav-home">Home</a>
+            <a href="#about-section" class="nav-item" id="nav-about">About Me</a>
+            <a href="#" class="nav-item explore-trigger" data-page="skills" id="nav-skills">Skills</a>
+            <a href="#" class="nav-item explore-trigger" data-page="projects" id="nav-projects">Projects</a>
+            <a href="#" class="nav-item explore-trigger" data-page="contact" id="nav-contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- Main Landing Scrollable Container -->
+    <main class="landing-container">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="sticker-tag handwritten">Welcome to my space</span>
+                    <h1 class="hero-title">Hi, this is <span class="highlight-name">Naqiya</span></h1>
+                    <p class="hero-subtitle">Master's Student | Tech Geek | Debater | Creative Thinker</p>
+                    <div class="scroll-indicator">
+                        <span class="arrow">↓</span> Scroll to read my diary or click the previews below
+                    </div>
+                </div>
+                <div class="hero-avatar-container">
+                    <!-- Dynamic Waving Woman Sticker -->
+                    <div class="avatar-sticker-wrapper">
+                        <img src="assets/waving_avatar.png" alt="Waving Naqiya avatar" class="avatar-sticker" id="avatar-img">
+                        <div class="sticker-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vertical Scrolling Spacer to create depth before About Me -->
+        <div class="scroll-spacer">
+            <div class="spacer-line"></div>
+            <div class="spacer-doodle">📓</div>
+            <div class="spacer-line"></div>
+        </div>
+
+        <!-- About Me Section (Reached by Scrolling) -->
+        <section id="about-section" class="about-section">
+            <div class="notebook-page about-card">
+                <div class="notebook-header">
+                    <span class="date-stamp">July 2026</span>
+                    <h2>Entry #01: About Me</h2>
+                </div>
+                <div class="notebook-body">
+                    <p class="handwritten-intro">
+                        "Hey there! I'm Naqiya Bharmal, a Master's student in Computer Science who genuinely geeks out over technology. Whether it's diving into the latest frameworks or debugging code at 2 AM (we've all been there), I'm always up for a tech challenge."
+                    </p>
+                    <p>
+                        Beyond the terminal, I'm an advocate for debating — give me a topic and I'll argue both sides just for fun. Reading and writing are my creative outlets, and I believe great communication is just as important as great code. My time as a Student Council member taught me the art of leadership, time management, and somehow convincing people that my event ideas are worth the chaos.
+                    </p>
+                    <p>
+                        I thrive on creativity and problem-solving, always trying to think outside the box. And when the box doesn't work? I just build a new box. <em>(Sometimes it's a hexagon.)</em>
+                    </p>
+                    <div class="scrapbook-tape left-tape"></div>
+                    <div class="scrapbook-tape right-tape"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Previews Grid (Landing Page Previews) -->
+        <section class="previews-section">
+            <div class="section-title-wrapper">
+                <h2 class="handwritten text-center">My Scrapbook Previews</h2>
+                <p class="text-center font-sub">Click on any diary page preview below to explore it in full detail</p>
+            </div>
+            
+            <div class="previews-grid">
+                <!-- Preview 1: Skills -->
+                <div class="preview-card" data-target="skills">
+                    <div class="washi-tape green-tape"></div>
+                    <div class="preview-card-inner">
+                        <span class="preview-tag">Section 01</span>
+                        <h3>My Skills</h3>
+                        <div class="mini-skills-list">
+                            <span>Python</span> <span>JavaScript</span> <span>AI & ML</span> <span>Android</span>
+                        </div>
+                        <p class="preview-desc">A structured layout of my technical toolbox and soft skills.</p>
+                        <button class="btn-explore">Open Skills Book →</button>
+                    </div>
+                </div>
+
+                <!-- Preview 2: Projects -->
+                <div class="preview-card" data-target="projects">
+                    <div class="washi-tape brown-tape"></div>
+                    <div class="preview-card-inner">
+                        <span class="preview-tag">Section 02</span>
+                        <h3>Projects Gallery</h3>
+                        <div class="mini-project-thumbnail">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>PinkFinance Pro, StaffPay Portal...</span>
+                        </div>
+                        <p class="preview-desc">Explore interactive, role-based, and academic applications.</p>
+                        <button class="btn-explore">View Projects Shelf →</button>
+                    </div>
+                </div>
+
+                <!-- Preview 3: Canva & Certifications -->
+                <div class="preview-card" data-target="creativity">
+                    <div class="washi-tape green-tape"></div>
+                    <div class="preview-card-inner">
+                        <span class="preview-tag">Section 03</span>
+                        <h3>Creative Canvas</h3>
+                        <p class="preview-desc">Take a look at my Canva board passion and professional certifications.</p>
+                        <div class="mini-certs">
+                            <span class="badge"><i class="fa-solid fa-certificate"></i> IBM Gen AI</span>
+                        </div>
+                        <button class="btn-explore">Open Canvas Board →</button>
+                    </div>
+                </div>
+
+                <!-- Preview 4: Achievements & Leadership -->
+                <div class="preview-card" data-target="achievements">
+                    <div class="washi-tape brown-tape"></div>
+                    <div class="preview-card-inner">
+                        <span class="preview-tag">Section 04</span>
+                        <h3>Logbook: Awards</h3>
+                        <p class="preview-desc">A travel log of debate wins, poster presentations, and council roles.</p>
+                        <div class="mini-awards">
+                            <span>🏆 Teklogica '26</span> <span>🗣️ Symbiosis Debate</span>
+                        </div>
+                        <button class="btn-explore">Read Logbook →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Skeuomorphic Diary Book Overlay (Opens full pages) -->
+    <div id="diary-overlay" class="diary-overlay-container">
+        <!-- Close Overlay Button -->
+        <button class="btn-close-diary" aria-label="Close Diary"><i class="fa-solid fa-circle-xmark"></i> Close Journal</button>
+
+        <!-- The Book Body -->
+        <div class="diary-book">
+            <!-- Book Spine/Binder Rings -->
+            <div class="book-spine">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+            </div>
+
+            <!-- Left Page & Right Page layout -->
+            <div class="book-pages-container">
+                <!-- Page Tabs (Sticking out of the book edge) -->
+                <div class="book-tabs">
+                    <button class="book-tab" data-page="skills">Skills</button>
+                    <button class="book-tab" data-page="projects">Projects</button>
+                    <button class="book-tab" data-page="creativity">Creativity</button>
+                    <button class="book-tab" data-page="achievements">Achievements</button>
+                    <button class="book-tab" data-page="contact">Contact Me</button>
+                </div>
+
+                <!-- LEFT PAGE: Static contextual sidebar or Scrapbook notes -->
+                <div class="book-page page-left">
+                    <div class="left-page-decor">
+                        <div class="photo-frame-polaroid">
+                            <img src="assets/waving_avatar.png" alt="Naqiya Polaroid" class="polaroid-photo">
+                            <span class="handwritten caption">Making code beautiful 💻</span>
+                        </div>
+                        <div class="doodle-notes">
+                            <h4 class="handwritten"><i class="fa-solid fa-pencil"></i> Scribble Pad</h4>
+                            <p class="handwritten-scribble">"Sometimes the box doesn't work, so I just build a hexagon! ⬡"</p>
+                            <p class="handwritten-scribble">"Coffee level: ☕☕☕"</p>
+                        </div>
+                        <div class="sticker-flower">🌸</div>
+                        <div class="sticker-heart">💚</div>
+                    </div>
+                </div>
+
+                <!-- RIGHT PAGE: Dynamic Content based on active tab -->
+                <div class="book-page page-right">
+                    <div class="page-content-wrapper">
+                        
+                        <!-- SKILLS PAGE -->
+                        <div class="diary-page-content" id="diary-page-skills">
+                            <h2 class="section-heading handwritten"><i class="fa-solid fa-screwdriver-wrench"></i> Technical Skillbox</h2>
+                            <div class="skills-grid">
+                                
+                                <div class="skill-category">
+                                    <h4>Programming & OOP</h4>
+                                    <div class="tags-container">
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">Java</span>
+                                        <span class="skill-tag">C</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h4>Web Technologies</h4>
+                                    <div class="tags-container">
+                                        <span class="skill-tag">HTML5</span>
+                                        <span class="skill-tag">CSS3</span>
+                                        <span class="skill-tag">JavaScript</span>
+                                        <span class="skill-tag">Bootstrap</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h4>AI & ML Tools</h4>
+                                    <div class="tags-container">
+                                        <span class="skill-tag">IBM Watson</span>
+                                        <span class="skill-tag">Pandas</span>
+                                        <span class="skill-tag">Scikit Learn</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h4>Databases & Systems</h4>
+                                    <div class="tags-container">
+                                        <span class="skill-tag">MySQL</span>
+                                        <span class="skill-tag">RDBMS</span>
+                                        <span class="skill-tag">MongoDB</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h4>Mobile & Version Control</h4>
+                                    <div class="tags-container">
+                                        <span class="skill-tag">Android Studio</span>
+                                        <span class="skill-tag">GitHub</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category">
+                                    <h4>Other Tools & Soft Skills</h4>
+                                    <div class="tags-container">
+                                        <span class="skill-tag">Power BI</span>
+                                        <span class="skill-tag">MS Excel</span>
+                                        <span class="skill-tag">PowerPoint</span>
+                                        <span class="skill-tag">Canva</span>
+                                        <span class="skill-tag highlight">Leadership</span>
+                                        <span class="skill-tag highlight">Problem Solving</span>
+                                        <span class="skill-tag highlight">Debugging</span>
+                                        <span class="skill-tag highlight">Public Speaking</span>
+                                        <span class="skill-tag highlight">Communication</span>
+                                    </div>
+                                </div>
+
+                                <div class="skill-category full-width">
+                                    <h4>Testing Experience</h4>
+                                    <p class="testing-text">
+                                        <i class="fa-solid fa-circle-check"></i> Manual functional testing of web applications including: login validation workflows, form submissions, and database state workflows. Designed positive and negative scenarios to secure robust operations.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PROJECTS PAGE -->
+                        <div class="diary-page-content hidden" id="diary-page-projects">
+                            <h2 class="section-heading handwritten"><i class="fa-solid fa-folder-open"></i> Projects Shelf</h2>
+                            <div class="projects-container">
+                                
+                                <!-- Project 1: PinkFinance Pro -->
+                                <div class="project-item-card">
+                                    <div class="project-pin">📌</div>
+                                    <div class="project-header">
+                                        <h3>PinkFinance Pro</h3>
+                                        <span class="project-year">2026</span>
+                                    </div>
+                                    <div class="project-tech">Vanilla JS, CSS3, Chart.js</div>
+                                    <p class="project-desc">Implements a secure, role-based finance tracker featuring an interactive live dashboard and export functionalities (CSV, JSON).</p>
+                                    <a href="#" class="btn-github-deploy" target="_blank"><i class="fa-brands fa-github"></i> GitHub Deployment</a>
+                                </div>
+
+                                <!-- Project 2: StaffPay Portal -->
+                                <div class="project-item-card">
+                                    <div class="project-pin">📌</div>
+                                    <div class="project-header">
+                                        <h3>StaffPay Portal</h3>
+                                        <span class="project-year">2026</span>
+                                    </div>
+                                    <div class="project-tech">PHP, MySQL, HTML5/CSS3/JS</div>
+                                    <p class="project-desc">Centralized billing app automating exam duty payments with password hashing, real-time rates, and an Accounts Office admin panel.</p>
+                                    <a href="#" class="btn-github-deploy" target="_blank"><i class="fa-brands fa-github"></i> GitHub Deployment</a>
+                                </div>
+
+                                <!-- Project 3: Daana -->
+                                <div class="project-item-card">
+                                    <div class="project-pin">📌</div>
+                                    <div class="project-header">
+                                        <h3>Daana — Food Donation</h3>
+                                        <span class="project-year">2024</span>
+                                    </div>
+                                    <div class="project-tech">JS, Bootstrap, JDBC, JSP</div>
+                                    <p class="project-desc">Full-stack platform matching food donors and NGOs real-time, aligned with UN SDGs, validated with rigorous manual test scenarios.</p>
+                                    <a href="#" class="btn-github-deploy" target="_blank"><i class="fa-brands fa-github"></i> GitHub Deployment</a>
+                                </div>
+
+                                <!-- Project 4: Stock Market DS -->
+                                <div class="project-item-card">
+                                    <div class="project-pin">📌</div>
+                                    <div class="project-header">
+                                        <h3>Stock Market Data Science</h3>
+                                        <span class="project-year">2024</span>
+                                    </div>
+                                    <div class="project-tech">Python, Pandas, ML Models</div>
+                                    <p class="project-desc">Engineered pipeline analyzing stock trends with automated data cleaning and KPI dashboards to ensure predictive accuracy.</p>
+                                    <a href="#" class="btn-github-deploy" target="_blank"><i class="fa-brands fa-github"></i> GitHub Deployment</a>
+                                </div>
+
+                                <!-- Project 5: Fire Safety System Simulation -->
+                                <div class="project-item-card">
+                                    <div class="project-pin">📌</div>
+                                    <div class="project-header">
+                                        <h3>Fire Safety Simulation</h3>
+                                        <span class="project-year">2024</span>
+                                    </div>
+                                    <div class="project-tech">IoT, Blockchain Simulation</div>
+                                    <p class="project-desc">Simulated emergency alert system linking IoT sensors and blockchain. Nominated for the prestigious Avishkar 2024 research festival.</p>
+                                    <a href="#" class="btn-github-deploy" target="_blank"><i class="fa-brands fa-github"></i> GitHub Deployment</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- CREATIVITY & CERTIFICATIONS PAGE -->
+                        <div class="diary-page-content hidden" id="diary-page-creativity">
+                            <h2 class="section-heading handwritten"><i class="fa-solid fa-palette"></i> Creative Canvas</h2>
+                            
+                            <!-- Canva Passion Section -->
+                            <div class="canva-passion-block">
+                                <div class="scrapbook-tape green-tape"></div>
+                                <h3 class="handwritten-title">Designing Doodles & Canva Boards</h3>
+                                <p class="canva-oneliner">"I have 99 problems, and I solved 98 of them with a custom template, and the last one with alignment gridlines."</p>
+                                <div class="canva-gallery-placeholder">
+                                    <div class="gallery-slot">
+                                        <i class="fa-regular fa-image"></i>
+                                        <span>[Canvas Board Link 1]</span>
+                                    </div>
+                                    <div class="gallery-slot">
+                                        <i class="fa-regular fa-image"></i>
+                                        <span>[Canvas Board Link 2]</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Certifications -->
+                            <div class="certifications-block">
+                                <h3 class="handwritten-title"><i class="fa-solid fa-stamp"></i> Certifications</h3>
+                                <div class="certs-list">
+                                    <div class="cert-stamp">
+                                        <div class="stamp-border">
+                                            <i class="fa-solid fa-graduation-cap"></i>
+                                            <h5>IBM</h5>
+                                            <p>Use Gen AI for Software Dev</p>
+                                        </div>
+                                    </div>
+                                    <div class="cert-stamp">
+                                        <div class="stamp-border">
+                                            <i class="fa-solid fa-code"></i>
+                                            <h5>IBM Boot Camp</h5>
+                                            <p>Gen AI: Prompt to Production</p>
+                                        </div>
+                                    </div>
+                                    <div class="cert-stamp">
+                                        <div class="stamp-border">
+                                            <i class="fa-solid fa-atom"></i>
+                                            <h5>Workshop</h5>
+                                            <p>Quantum Communications (3 Days)</p>
+                                        </div>
+                                        <div class="cert-details">
+                                            <span>Simulated gates, classical cyber threat, and foundational linear algebra.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- AWARDS & EXTRACURRICULAR PAGE -->
+                        <div class="diary-page-content hidden" id="diary-page-achievements">
+                            <h2 class="section-heading handwritten"><i class="fa-solid fa-award"></i> Logbook & Achievements</h2>
+                            
+                            <!-- Awards Stamps Panel -->
+                            <div class="achievements-section">
+                                <h3 class="handwritten-title">Awards & Achievements</h3>
+                                <div class="awards-stamps-container">
+                                    <div class="award-stamp-item">
+                                        <div class="stamp-outline maroon-stamp">
+                                            <div class="stamp-inner">
+                                                <i class="fa-solid fa-medal stamp-badge"></i>
+                                                <span class="rank">2nd</span>
+                                                <span class="event">AI Prompt Eng.</span>
+                                                <span class="org">Teklogica '25-'26</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-stamp-item">
+                                        <div class="stamp-outline green-stamp">
+                                            <div class="stamp-inner">
+                                                <i class="fa-solid fa-trophy stamp-badge"></i>
+                                                <span class="rank">1st</span>
+                                                <span class="event">Math & Crypto</span>
+                                                <span class="org">Teklogica '23-'24</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-stamp-item">
+                                        <div class="stamp-outline blue-stamp">
+                                            <div class="stamp-inner">
+                                                <i class="fa-solid fa-star stamp-badge"></i>
+                                                <span class="rank">Win</span>
+                                                <span class="event">Best Answer</span>
+                                                <span class="org">Symbiosis '23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-stamp-item">
+                                        <div class="stamp-outline brown-stamp">
+                                            <div class="stamp-inner">
+                                                <i class="fa-solid fa-award stamp-badge"></i>
+                                                <span class="rank">2nd</span>
+                                                <span class="event">Quantum Poster</span>
+                                                <span class="org">Teklogica '22-'23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="award-stamp-item">
+                                        <div class="stamp-outline maroon-stamp">
+                                            <div class="stamp-inner">
+                                                <i class="fa-solid fa-user-check stamp-badge"></i>
+                                                <span class="rank">Part</span>
+                                                <span class="event">State Debate</span>
+                                                <span class="org">Wakalkar '23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Extracurriculars Timeline -->
+                            <div class="extracurriculars-section">
+                                <h3 class="handwritten-title">Leadership & Extra Curriculars</h3>
+                                <div class="logbook-board">
+                                    
+                                    <div class="logbook-card log-card-1">
+                                        <div class="log-pin">📌</div>
+                                        <div class="washi-tape-accent blue-tape"></div>
+                                        <div class="log-postmark">2024 - 2025</div>
+                                        <h5>Student Council Member</h5>
+                                        <p>Collaborated on student governance, campus events, and organizational development.</p>
+                                    </div>
+
+                                    <div class="logbook-card log-card-2">
+                                        <div class="log-pin">📌</div>
+                                        <div class="washi-tape-accent maroon-tape"></div>
+                                        <div class="log-postmark">2025 - 2026</div>
+                                        <h5>Core Organizer, Teklogica</h5>
+                                        <p>Led end-to-end planning of annual tech fest. Managed cross-functional teams and introduced the high-engagement Flash Mob!</p>
+                                    </div>
+
+                                    <div class="logbook-card log-card-3">
+                                        <div class="log-pin">📌</div>
+                                        <div class="washi-tape-accent green-tape"></div>
+                                        <div class="log-postmark">2023 - 2025</div>
+                                        <h5>Event Lead, Teklogica</h5>
+                                        <p>Spearheaded sponsorship acquisition and managed Math Aptitude, Rubik's Cube, and Statistics Poster competitions.</p>
+                                    </div>
+
+                                    <div class="logbook-card log-card-4">
+                                        <div class="log-pin">📌</div>
+                                        <div class="washi-tape-accent blue-tape"></div>
+                                        <div class="log-postmark">2023 - 2024</div>
+                                        <h5>College Anchor</h5>
+                                        <p>Hosted high-profile events including Freshers' 2023/24 and animal rights play "Sanctuary".</p>
+                                    </div>
+
+                                    <div class="logbook-card log-card-5">
+                                        <div class="log-pin">📌</div>
+                                        <div class="washi-tape-accent maroon-tape"></div>
+                                        <div class="log-postmark">Workshops</div>
+                                        <h5>Technical Presentations</h5>
+                                        <p>Presented <strong>PageRank Algorithm</strong> at Pi Day '25. Selected participant in state-level <strong>GD Idol '24</strong>.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTACT ME PAGE -->
+                        <div class="diary-page-content hidden" id="diary-page-contact">
+                            <h2 class="section-heading handwritten"><i class="fa-solid fa-paper-plane"></i> Contact Me</h2>
+                            <p class="text-center font-sub">Feel free to drop a message or connect with me on these channels!</p>
+                            
+                            <div class="envelope-container">
+                                <div class="envelope" id="diary-envelope">
+                                    <div class="envelope-flap"></div>
+                                    <div class="envelope-pocket"></div>
+                                    <div class="letter">
+                                        <div class="letter-content">
+                                            <h4 class="handwritten">Hello! Let's talk tech.</h4>
+                                            <hr>
+                                            <div class="contact-links-list">
+                                                <a href="mailto:naqiya.bharmal@example.com" class="contact-link-item">
+                                                    <i class="fa-solid fa-envelope"></i> <span>naqiya.bharmal@example.com</span>
+                                                </a>
+                                                <a href="https://github.com" class="contact-link-item" target="_blank">
+                                                    <i class="fa-brands fa-github"></i> <span>github.com/naqiya</span>
+                                                </a>
+                                                <a href="https://linkedin.com" class="contact-link-item" target="_blank">
+                                                    <i class="fa-brands fa-linkedin"></i> <span>linkedin.com/in/naqiya</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="envelope-hint">Click the envelope to pull out the letter! ✉️</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Import Anime.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <!-- Main JS -->
+    <script src="app.js"></script>
+</body>
+</html>
